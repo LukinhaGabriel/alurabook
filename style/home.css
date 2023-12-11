@@ -1,0 +1,118 @@
+@import url(./global.css);
+@import url(./components/header.css);
+@import url(./components/banner.css);
+@import url(./components/carrosel.css);
+@import url(./components/card.css);
+@import url(./components/footer.css);
+
+
+
+
+
+/* SECTION BOOKS */
+
+.books{
+    width: 100%;
+    background-color: var(--bg-section-color);
+    padding-bottom: 20px;
+}
+
+.books__title{
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: var(--call-to-action);
+    background-color: var(--primary-color);
+    
+    padding: 2rem 0 1rem 0;
+}
+
+/* TOPICS */
+
+.topics{
+    padding: 1.5rem 1rem;
+    background-color: var(--second-color);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.topics__title{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.topics__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+
+
+/* Newsletter */
+
+.newsletter{
+    padding: 24px 24px 30px 24px;
+}
+
+.newsletter__title{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+}
+
+.newsletter__subtitle{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.newsletter__form{
+    position: relative;
+    width: 100%;
+    height: 44px;
+}
+
+.form__img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form__email{
+    width: 100%;
+    height: 100%;
+
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 24px;
+    border: 1px solid var(--Teste, #002F52);
+    padding-left: 54px;
+    background: var(--Teste, linear-gradient(98deg, #002F52 35.49%, #326589 165.37%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form__email::placeholder{
+    font-size: 1rem;
+    font-weight: 400;
+    background: var(--Teste, linear-gradient(98deg, #002F52 35.49%, #326589 165.37%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

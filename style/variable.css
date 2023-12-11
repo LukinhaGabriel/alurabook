@@ -1,0 +1,12 @@
+:root{
+    --primary-color: #fff;
+    --second-color: #002F52;
+    --bg-section-color: #EBECEE; 
+    --call-to-action: #EB9B00;
+    --black-color: #000;
+
+    --gradient: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+
+    /* Fonts */
+    --primary-font: "Poppins", sans-serif;
+}

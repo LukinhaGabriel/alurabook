@@ -1,0 +1,10 @@
+footer{
+    border-top: 1px solid var(--black-color);
+    padding: 1.5rem;
+}
+
+.footer__title{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}

@@ -1,0 +1,37 @@
+@import url("./variable.css");
+
+
+body{
+    width: 100%;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    background-color: var(--bg-color);
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 380px;
+    
+    margin: 0 auto;
+}
+
+.button{
+    display: block;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    background-color: var(--call-to-action);
+    border: none;
+}
