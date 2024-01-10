@@ -4,9 +4,12 @@
     --bg-section-color: #EBECEE; 
     --call-to-action: #EB9B00;
     --black-color: #000;
+    --gray-color-ligth: #858585;
+    --gray-color-dark: #474646;
 
     --gradient: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
 
     /* Fonts */
     --primary-font: "Poppins", sans-serif;
+    --second-font: 'Josefin Sans', sans-serif;
 }

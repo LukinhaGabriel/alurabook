@@ -6,29 +6,12 @@
 @import url(./components/footer.css);
 
 
-
-
-
-/* SECTION BOOKS */
-
-.books{
+.section__books{
     width: 100%;
     background-color: var(--bg-section-color);
     padding-bottom: 20px;
 }
 
-.books__title{
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    
-    color: var(--call-to-action);
-    background-color: var(--primary-color);
-    
-    padding: 2rem 0 1rem 0;
-}
 
 /* TOPICS */
 
@@ -49,11 +32,19 @@
 }
 
 .topics__list{
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 16px;
+}
+
+.topic__link{
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    padding: 16px 24px;
 }
 
 
@@ -115,4 +106,51 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+
+@media (min-width: 1024px){
+    .section__books{
+        padding-bottom: 40px;
+    } 
+    
+    .topics{
+        padding: 2rem 1rem;
+    }
+
+    .topics__title{
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+
+    .topics__list{
+        width: 80%;
+        max-width: 926px;
+        margin: 0 auto;
+    }
+
+    .topic__link{
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        padding: 16px 24px;
+    }
+
+
+    .newsletter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .newsletter__description{
+        width: 30%;
+    }
+    .newsletter__title{
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+    .newsletter__form{
+        width: 30%;
+    }
 }

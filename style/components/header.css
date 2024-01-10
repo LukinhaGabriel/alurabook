@@ -23,6 +23,7 @@
 }
 
 
+
 .navbar__menu-hamburguer{
     display: inline-block;
     width: 36px;
@@ -72,7 +73,7 @@ nav .list__menu{
 
 #menu{
     display: none;
-}
+} 
 
 #menu:checked~.navbar__container__rotulo{
     background-color: var(--second-color);
@@ -84,4 +85,83 @@ nav .list__menu{
 
 #menu:checked~nav .list__menu{
     display: block;
+}
+
+.navbar__titulo, .navbar__opcoes{
+    display: none;
+}
+
+@media (min-width: 1024px){
+    .navbar__container__rotulo{
+        display: none;
+    }
+    .navbar__link__logo{
+        display: flex;
+        align-items: center;
+    }
+    .navbar__titulo{
+        display: block;
+        font-family: var(--second-font);
+        font-size: 1.875rem;
+        font-weight: 400;
+        line-height: 100%;
+        color: var(--black-color);
+        margin-top: 5px;
+    }
+    
+    .navbar__titulo--negrito{
+        font-weight: 700;
+    }  
+
+    .navbar__opcoes{
+        display: block;
+    }
+
+    
+    .opcoes{
+        display: flex;
+        align-items: center;
+    }
+
+    .opcoes__item{
+        padding: 0.625rem 1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .opcoes__link{
+        font-family: inherit;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        color: var(--black-color);
+    }
+
+    .navbar__container__link-transparent{
+        display: none;
+    }
+
+    #opcao__botao{
+        display: none;
+    } 
+    
+    #opcao__botao:checked~.opcao__botao_rotulo{
+        background-color: var(--second-color);
+        color: var(--primary-color);
+    }
+    
+    #opcao__botao:checked~.list__menu{
+        display: block;
+    }
+
+    .list__menu{
+        width: auto;
+        left: auto;
+        top: 73%;
+    }
+
+    .list__menu__link:hover{
+        background: var(--gradient);
+        color: var(--primary-color);
+    }
 }

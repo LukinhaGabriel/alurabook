@@ -8,3 +8,47 @@ footer{
     line-height: 1.5rem;
     font-weight: 400;
 }
+
+.footer__list{
+    display: none;
+}
+
+
+@media (min-width: 1024px){
+    footer{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .footer__list{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__list__title{
+        font-family: Poppins;
+        font-size: 0.875rem;
+        line-height: 1.313rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: var(--gray-color-ligth);
+        margin-bottom: 24px;
+    }
+    .footer__list__item{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .footer__list__item:not(:last-child){
+        margin-bottom: 16px;
+    }
+    .footer__list__img{
+        width: 100%;
+        max-width: 35px;
+    }
+    .footer__list__link{
+        font-size: 0.875rem;
+        line-height: 1.313rem;
+        font-weight: 400;
+        color: var(--gray-color-dark);
+    }
+}

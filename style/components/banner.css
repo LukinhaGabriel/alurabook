@@ -58,3 +58,24 @@
     background-repeat: no-repeat;
     background-position-x: 0;
 }
+
+
+@media (min-width: 1024px){
+    .banner{
+        padding: 84px auto;
+    }
+    .banner__title{
+        font-size: 2.25rem;
+        line-height: 3.375rem;
+    } 
+
+    .banner__form{
+        width: 40%;
+    }
+
+    .form__field-search{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+}

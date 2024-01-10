@@ -1,4 +1,19 @@
+.books__title{
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: var(--call-to-action);
+    background-color: var(--primary-color);
+    
+    padding: 2rem 0 1rem 0;
+}
+
+
 .swiper{
+    position: relative;
     width: 100%;
     height: 100%;
     margin-bottom: 20px;
@@ -6,10 +21,7 @@
 
 
 .swiper-slide img{
-    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .swiper-pagination{
@@ -23,4 +35,50 @@
 
 .swiper-button-next, .swiper-button-prev{
     display: none;
+}
+
+
+@media (min-width: 1024px){
+    .books__title{
+        font-size: 1.625rem;
+        line-height: 2.438rem;
+    }
+
+    .swiper-pagination{
+        width: 50px;
+        margin: 2rem 0 3rem 0;
+    }
+
+    .swiper-pagination-bullet{
+        width: 12px;
+        height: 12px;
+    }
+
+    .swiper{
+        width: 60%;
+        z-index: 1px;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        display:flex;
+        width: 48px;
+        height: 48px;
+        top: 60%;
+        align-items: center;
+        justify-content: center;
+        background: var(--gradient);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+    }
+    
+    .swiper-button-next::after, .swiper-button-prev::after{
+        display: flex;
+        width: 24px;
+        height: 24px;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 20px;
+        color: var(--primary-color);
+    }
 }
