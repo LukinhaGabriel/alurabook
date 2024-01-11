@@ -56,13 +56,15 @@
         
         <div class="navbar__container">
             <a class="navbar__container__link-transparent" href="#">
-                <img class="navbar__container__imagem" src="./Assets/svg/icons/Favoritos.svg" alt="Meus Favoritos">    
+                <img class="navbar__container__imagem" src="./Assets/svg/icons/Favoritos.svg" alt="Meus Favoritos">  
             </a>
             <a class="navbar__container__link" href="#">
-                <img class="navbar__container__imagem" src="./Assets/svg/icons/Compras.svg" alt="Carrinho de Compra">    
+                <img class="navbar__container__imagem" src="./Assets/svg/icons/Compras.svg" alt="Carrinho de Compra"> 
+                <p class="navbar__container__text">Minha Sacola</p>     
             </a>
             <a class="navbar__container__link" href="#">
-                <img class="navbar__container__imagem" src="./Assets/svg/icons/Usuario.svg" alt="Meu Perfil">    
+                <img class="navbar__container__imagem" src="./Assets/svg/icons/Usuario.svg" alt="Meu Perfil">  
+                <p class="navbar__container__text">Meu Perfil</p>    
             </a>
         </div>
     </header>
@@ -76,97 +78,99 @@
         </section>
 
         <section class="section__books">
-            
             <h2 class="books__title">Novos lançamentos</h2>
-
-            <div class="swiper">
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./Assets/svg/book-cover/Acessibilidade.svg" alt="">
+            <div class="books__container">
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
+    
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./Assets/svg/book-cover/Acessibilidade.svg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Assets/svg/book-cover/Javascript.svg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Assets/svg/book-cover/Portugol.svg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Assets/svg/book-cover/Guia Front-end.svg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Assets/svg/book-cover/ApacheKafka.svg" alt="">
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="./Assets/svg/book-cover/Javascript.svg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./Assets/svg/book-cover/Portugol.svg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./Assets/svg/book-cover/Guia Front-end.svg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./Assets/svg/book-cover/ApacheKafka.svg" alt="">
-                    </div>
+                    
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
                 </div>
-                
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                
-            </div>
-
-            <div class="card">
-              <div class="card__header">
-                    <div class="card__header__wrapper">
-                        <h3 class="card__text-call-to-action">Talvez você também se interesse por...</h3>
-                        <h2 class="card__title">Angular 11 e Firebase</h2>
-                        <p class="card__description">Construindo uma aplicação integrada com a plataforma do Google</p>
-                    </div>
-                    <img class="card__header__img" src="./Assets/svg/book-cover/Angular.svg" alt="">
-              </div>
-              <div class="card__footer"> 
-                <ul class="card__footer__list">
-                    <li class="card__footer__item"><img src="./Assets/svg/icons/Favoritos.svg" alt=""></li>
-                    <li class="card__footer__item"><img src="./Assets/svg/icons/Compras.svg" alt=""></li>
-                </ul>
-                <button class="button">Saiba Mais</button>
-              </div>
-            </div>
-        </section>
-
-        <section class="section__books">
-            <h2 class="books__title">Mais Vendidos</h2>
-            <div class="swiper">
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./Assets/svg/book-cover/Acessibilidade.svg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./Assets/svg/book-cover/Javascript.svg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./Assets/svg/book-cover/Portugol.svg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./Assets/svg/book-cover/Guia Front-end.svg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./Assets/svg/book-cover/ApacheKafka.svg" alt="">
-                    </div>
-                </div>
-                
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                
-            </div>
-            <div class="card">
-                <div class="card__header">
-                    <div class="card__header__wrapper">
-                        <img class="card__star" src="./Assets/svg/icons/Estrelinhas.svg" alt="estrelas">
-                        <h3 class="card__text-call-to-action">Autora do Mês</h3>
-                        <h2 class="card__title">Juliana Agarikov</h2>
-                        <p class="card__description">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
-                    </div>
-                    <img class="card__header__img" src="./Assets/svg/writer/Escritora.svg" alt="">
-                </div>
-                <div class="card__footer">
+    
+                <div class="card">
+                  <div class="card__header">
+                        <div class="card__header__wrapper">
+                            <h3 class="card__text-call-to-action">Talvez você também se interesse por...</h3>
+                            <h2 class="card__title">Angular 11 e Firebase</h2>
+                            <p class="card__description">Construindo uma aplicação integrada com a plataforma do Google</p>
+                        </div>
+                        <img class="card__header__img" src="./Assets/svg/book-cover/Angular.svg" alt="">
+                  </div>
+                  <div class="card__footer"> 
                     <ul class="card__footer__list">
                         <li class="card__footer__item"><img src="./Assets/svg/icons/Favoritos.svg" alt=""></li>
                         <li class="card__footer__item"><img src="./Assets/svg/icons/Compras.svg" alt=""></li>
                     </ul>
                     <button class="button">Saiba Mais</button>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__books">
+            <h2 class="books__title">Mais Vendidos</h2>
+            <div class="books__container">
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
+    
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./Assets/svg/book-cover/Acessibilidade.svg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Assets/svg/book-cover/Javascript.svg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Assets/svg/book-cover/Portugol.svg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Assets/svg/book-cover/Guia Front-end.svg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Assets/svg/book-cover/ApacheKafka.svg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
+                </div>
+                <div class="card">
+                    <div class="card__header">
+                        <div class="card__header__wrapper">
+                            <img class="card__star" src="./Assets/svg/icons/Estrelinhas.svg" alt="estrelas">
+                            <h3 class="card__text-call-to-action">Autora do Mês</h3>
+                            <h2 class="card__title">Juliana Agarikov</h2>
+                            <p class="card__description">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                        </div>
+                        <img class="card__header__img" src="./Assets/svg/writer/Escritora.svg" alt="">
+                    </div>
+                    <div class="card__footer">
+                        <ul class="card__footer__list">
+                            <li class="card__footer__item"><img src="./Assets/svg/icons/Favoritos.svg" alt=""></li>
+                            <li class="card__footer__item"><img src="./Assets/svg/icons/Compras.svg" alt=""></li>
+                        </ul>
+                        <button class="button">Saiba Mais</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -177,6 +181,9 @@
                 <ul class="topics__list">
                     <li class="topics__item">
                         <a class="button topic__link" href="#">Android</a>
+                    </li>
+                    <li class="topics__item">
+                        <a class="button topic__link" href="#">OO</a>
                     </li>
                     <li class="topics__item">
                         <a class="button topic__link" href="#">Marketing Digital</a>
@@ -191,13 +198,10 @@
                         <a class="button topic__link" href="#">HTML & CSS</a>
                     </li>
                     <li class="topics__item">
-                        <a class="button topic__link" href="#">Python</a>
-                    </li>
-                    <li class="topics__item">
-                        <a class="button topic__link" href="#">OO</a>
-                    </li>
-                    <li class="topics__item">
                         <a class="button topic__link" href="#">Java</a>
+                    </li>
+                    <li class="topics__item">
+                        <a class="button topic__link" href="#">Python</a>
                     </li>
                 </ul>
             </nav>
@@ -215,7 +219,7 @@
         </section>
     </main>
     <footer>
-        <h2 class="footer__title">Grupo Alura</h2>
+        <h2 class="footer__title"><a href="https://www.alura.com.br" target="_blank">Grupo Alura</a></h2>
         <ul class="footer__list">
             <li class="footer__list__title">Educação</li>
             <li class="footer__list__item">

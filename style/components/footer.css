@@ -20,6 +20,10 @@ footer{
         align-items: flex-start;
         justify-content: space-between;
     }
+    .footer__title{
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
     .footer__list{
         display: flex;
         flex-direction: column;
@@ -50,5 +54,29 @@ footer{
         line-height: 1.313rem;
         font-weight: 400;
         color: var(--gray-color-dark);
+    }
+
+    .footer__list__link:hover{
+        color: var(--call-to-action);
+    }
+}
+
+
+@media (min-width: 1728px){
+    footer{
+        justify-content: space-around;
+    }
+    .footer__list{
+        position: relative;
+    }
+    .footer__list::before{
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 396px;
+
+        left: -24px;
+
+        background: #858585;
     }
 }

@@ -6,14 +6,18 @@ Projeto desenvolvido no curso de HTML e CSS: responsividade com mobile-first da 
 
 ### O que é o projeto
 
-Um site do e-commerce AluraBooks, uma livraria online de livros sobre tecnologia.
+Construção de um site para um e-commerce de uma livraria online especializada em livros sobre tecnologia.
 
 ### Aprendizado
 
-Foi aprendido o conceito de mobile first que no desenvolvimento web consiste em iniciar a implementação pensando primeiro na experiência dos usuários de dispositivos móveis, e ir incrementando os recursos e adaptando o design ao passo que se aumenta o tamanho alteram as características da tela.
+Foi aprendido o conceito de mobile first no desenvolvimento web, que consiste em iniciar a implementação pensando primeiro na experiência dos usuários de dispositivos móveis. Posteriormente, incrementam-se os recursos e adapta-se o design à medida que se aumenta o tamanho e alteram-se as características da tela.
 
 ## Tecnologias Utilizadas
 
 - HTML5,
 - CSS3
-- SwiperJS
+- Biblioteca SwiperJS
+
+
+## Imagem do Projeto
+<img src="./Design/mobile.png" alt="Layout da versão mobile do projeto">

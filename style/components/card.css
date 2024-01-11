@@ -87,21 +87,28 @@
 }
 
 
-@media (min-width: 1024px){
+@media screen and (min-width: 1024px){
     .card{
         width: 45%;
         margin: 0 auto;
     }
+
+    .card__footer .button:active{
+        color: var(--call-to-action);
+        background-color: var(--primary-color);
+        outline: 4px solid var(--call-to-action);
+    }
 }
 
-@media  (min-width: 600px) and (max-width: 1023px){
+@media screen and  (min-width: 600px) and (max-width: 1023px){
     .card{
         width: 70%;
         margin: 0 auto;
     }
+
 }
 
-@media (max-width: 370px){
+@media screen and (max-width: 370px){
     .card__header{
         flex-direction: column-reverse;
         text-align: center;
@@ -114,5 +121,27 @@
 
     .card__footer .button{
         padding: 8px;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .card{
+        width: 35%;
+        margin: 46px;
+    }
+
+    .card__header{
+        gap: 16px;
+    }
+   
+    .card__text-call-to-action{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .card__description{
+        width: 100%;
+        max-width: 342px;
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 }

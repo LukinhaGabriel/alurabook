@@ -1,3 +1,10 @@
+.section__books{
+    width: 100%;
+    background-color: var(--bg-section-color);
+    padding-bottom: 20px;
+}
+
+
 .books__title{
     font-size: 1.125rem;
     line-height: 1.5rem;
@@ -39,6 +46,10 @@
 
 
 @media (min-width: 1024px){
+    .section__books{
+        padding-bottom: 40px;
+    } 
+    
     .books__title{
         font-size: 1.625rem;
         line-height: 2.438rem;
@@ -81,4 +92,23 @@
         font-size: 20px;
         color: var(--primary-color);
     }
+}
+
+@media screen and (min-width: 1728px){
+    .swiper{
+        width: 30%;
+        margin: 0 46px;
+    }
+
+    .swiper-pagination{
+        position: initial;
+        margin: 0px 0 16px 0;
+    }
+    .books__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2rem;
+        margin-top: 24px;
+    }    
 }

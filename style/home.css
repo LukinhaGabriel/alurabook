@@ -6,12 +6,6 @@
 @import url(./components/footer.css);
 
 
-.section__books{
-    width: 100%;
-    background-color: var(--bg-section-color);
-    padding-bottom: 20px;
-}
-
 
 /* TOPICS */
 
@@ -111,12 +105,8 @@
 
 
 @media (min-width: 1024px){
-    .section__books{
-        padding-bottom: 40px;
-    } 
-    
     .topics{
-        padding: 2rem 1rem;
+        padding: 4rem 1rem;
     }
 
     .topics__title{
@@ -136,12 +126,18 @@
         padding: 16px 24px;
     }
 
+    .topic__link:hover{
+        color: var(--call-to-action);
+        background-color: var(--primary-color);
+        outline: 4px solid var(--call-to-action);
+    }
 
     .newsletter{
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 16px;
+        padding: 2rem;
     }
     .newsletter__description{
         width: 30%;
@@ -152,5 +148,23 @@
     }
     .newsletter__form{
         width: 30%;
+    }
+}
+
+
+@media (min-width: 1728px){
+    .topics__list{
+        width: 40%;
+        max-width: 926px;
+        margin: 0 auto;
+    }
+    .newsletter__description{
+        width: 24%;
+    }
+    .newsletter__subtitle{
+        width: 80%;
+    }
+    .newsletter__form{
+        width: 20%;
     }
 }

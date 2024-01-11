@@ -62,7 +62,7 @@
 
 @media (min-width: 1024px){
     .banner{
-        padding: 84px auto;
+        padding: 5.25rem;
     }
     .banner__title{
         font-size: 2.25rem;
@@ -78,4 +78,14 @@
         line-height: 1.5rem;
     }
     
+}
+
+
+@media screen and (min-width: 1728px){
+    .banner{
+        padding: 6rem;
+    }
+    .banner__form{
+        width: 30%;
+    }
 }
